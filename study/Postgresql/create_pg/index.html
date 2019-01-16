@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="一 部署环境 操作系统： CentOS6.5 软件版本： postgresql-9.5.6  二 获取源码安装包地址：postgres源码安装包下载地址">
+<meta name="description" content="一 部署环境   名称 版本     操作系统 CentOS6.5   postgresql 9.5.6    二 获取源码安装包地址：postgres源码安装包下载地址">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Postgresql 简单源码安装(CentOS6.5)">
 <meta property="og:url" content="https://achoujiademiao.github.io/study/Postgresql/create_pg/index.html">
 <meta property="og:site_name" content="阿臭家的喵">
-<meta property="og:description" content="一 部署环境 操作系统： CentOS6.5 软件版本： postgresql-9.5.6  二 获取源码安装包地址：postgres源码安装包下载地址">
+<meta property="og:description" content="一 部署环境   名称 版本     操作系统 CentOS6.5   postgresql 9.5.6    二 获取源码安装包地址：postgres源码安装包下载地址">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-14T07:21:47.964Z">
+<meta property="og:updated_time" content="2019-01-16T02:51:09.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Postgresql 简单源码安装(CentOS6.5)">
-<meta name="twitter:description" content="一 部署环境 操作系统： CentOS6.5 软件版本： postgresql-9.5.6  二 获取源码安装包地址：postgres源码安装包下载地址">
+<meta name="twitter:description" content="一 部署环境   名称 版本     操作系统 CentOS6.5   postgresql 9.5.6    二 获取源码安装包地址：postgres源码安装包下载地址">
 
 
 
@@ -373,10 +373,24 @@
       
 
       
-        <h1 id="一-部署环境"><a href="#一-部署环境" class="headerlink" title="一 部署环境"></a>一 部署环境</h1><ol>
-<li>操作系统： CentOS6.5</li>
-<li>软件版本： postgresql-9.5.6</li>
-</ol>
+        <h1 id="一-部署环境"><a href="#一-部署环境" class="headerlink" title="一 部署环境"></a>一 部署环境</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>操作系统</td>
+<td>CentOS6.5</td>
+</tr>
+<tr>
+<td>postgresql</td>
+<td>9.5.6</td>
+</tr>
+</tbody>
+</table>
 <h1 id="二-获取源码安装包"><a href="#二-获取源码安装包" class="headerlink" title="二 获取源码安装包"></a>二 获取源码安装包</h1><p>地址：<a href="https://www.postgresql.org/ftp/source/" target="_blank" rel="noopener">postgres源码安装包下载地址</a><br><a id="more"></a></p>
 <h1 id="三-编译并安装"><a href="#三-编译并安装" class="headerlink" title="三 编译并安装"></a>三 编译并安装</h1><h2 id="1-解压安装包"><a href="#1-解压安装包" class="headerlink" title="1 解压安装包"></a>1 解压安装包</h2><p>上传安装包并解压至/usr/local/src,跳转至解压后的文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@CentOS6-2 src]<span class="comment"># cd /usr/local/src</span></span><br><span class="line">[root@CentOS6-2 src]<span class="comment"># tar -xvzf postgresql-9.5.6.tar.gz -C ./</span></span><br><span class="line">······</span><br><span class="line">postgresql-9.5.6/configure.in</span><br><span class="line">postgresql-9.5.6/INSTALL</span><br><span class="line">[root@CentOS6-2 src]<span class="comment">#</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="2-创建软件安装目录"><a href="#2-创建软件安装目录" class="headerlink" title="2 创建软件安装目录"></a>2 创建软件安装目录</h2><p>在/usr/local 新建postgres文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@CentOS6-2 src]<span class="comment"># mkdir /usr/local/postgres</span></span><br></pre></td></tr></table></figure></p>
