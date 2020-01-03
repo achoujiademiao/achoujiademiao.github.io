@@ -1,0 +1,6 @@
+1/登陆logsearch。
+地址：http://10.14.9.17:61888
+用户名/密码  ambari_logsearch_admin/c6K_hj@gb
+
+2. 查看昨天15:00 - 今天15:00的 CMH组件的日志
+已经出现过的日志在excel中已经列出。

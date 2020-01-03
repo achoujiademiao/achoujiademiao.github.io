@@ -300,8 +300,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T15:58:02+08:00">
-                2019-01-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-03T11:41:13+08:00">
+                2020-01-03
               </time>
             
 
@@ -413,7 +413,7 @@
 <h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>这个url与root很重要，具体与网页直接github或coding访问有关，这个在域名配置的时候详细说明<br>permalink在最初的时候是有一个默认值的，不过，由于是以时间来作为目录的，路径较深，不利于检索，所以，这里改成了通过分类与标题作为路径<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="attr">https://achoujiademiao.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:category/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="Category-amp-Tag"><a href="#Category-amp-Tag" class="headerlink" title="Category &amp; Tag"></a>Category &amp; Tag</h2><p>由于分类时大部分写的为中文，但是中文作为路径，检索不是很方便，所以修改了以下配置<br>这里是可以给category与tag加一个匹配map，例如，文章分类中写的学习，那么自动替换为study<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Category &amp; Tag</span></span><br><span class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></span><br><span class="line"><span class="attr">category_map:</span></span><br><span class="line">    <span class="string">学习:</span> <span class="string">study</span></span><br><span class="line"><span class="attr">tag_map:</span></span><br></pre></td></tr></table></figure></p>
 <p>文章：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo主题修饰(Next)</span><br><span class="line">category: </span><br><span class="line"><span class="bullet">- </span>学习</span><br><span class="line"><span class="bullet">- </span>Hexo</span><br><span class="line">toc: true</span><br><span class="line">copyright: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<p>网页访问路径：<br><a href="http://achoujiademiao.top/study/Hexo/blog_theme/" target="_blank" rel="noopener">http://achoujiademiao.top/study/Hexo/blog_theme/</a><br>如果没有配置，就会显示为:<br><a href="http://achoujiademiao.top/学习/Hexo/blog_theme/" target="_blank" rel="noopener">http://achoujiademiao.top/学习/Hexo/blog_theme/</a><br>ps. blog_theme 是我写的md文件的文件名blog_theme.md</p>
+<p>网页访问路径：<br><a href="http://achoujiademiao.top/study/Hexo/blog_theme/">http://achoujiademiao.top/study/Hexo/blog_theme/</a><br>如果没有配置，就会显示为:<br><a href="http://achoujiademiao.top/学习/Hexo/blog_theme/">http://achoujiademiao.top/学习/Hexo/blog_theme/</a><br>ps. blog_theme 是我写的md文件的文件名blog_theme.md</p>
 <h2 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h2><p>这个博客采用的是next的主题，所以这里就设置为next啦，主要是得和Hexo\theme内的主题存放文件夹名一致<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="四-配置Next样式"><a href="#四-配置Next样式" class="headerlink" title="四 配置Next样式"></a>四 配置Next样式</h1><p>Next配置文件为Hexo\theme\next_config.yml<br>由于想要配置的内容不多，所以就只改了以下几点：</p>
 <ul>
@@ -488,8 +488,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/study/Hexo/create_blog/" rel="next" title="使用Github Pages+Hexo搭建简单博客">
-                <i class="fa fa-chevron-left"></i> 使用Github Pages+Hexo搭建简单博客
+              <a href="/study/Hexo/blog_site/" rel="next" title="Hexo(双线路)绑定域名时走过的一些弯路">
+                <i class="fa fa-chevron-left"></i> Hexo(双线路)绑定域名时走过的一些弯路
               </a>
             
           </div>
@@ -498,8 +498,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/study/Hexo/blog_site/" rel="prev" title="Hexo(双线路)绑定域名时走过的一些弯路">
-                Hexo(双线路)绑定域名时走过的一些弯路 <i class="fa fa-chevron-right"></i>
+              <a href="/study/Hexo/create_blog/" rel="prev" title="使用Github Pages+Hexo搭建简单博客">
+                使用Github Pages+Hexo搭建简单博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -581,7 +581,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -592,7 +592,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -648,7 +648,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+<div class="copyright">&copy; 2019 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-snowflake-o"></i>
   </span>
